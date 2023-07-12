@@ -17,7 +17,7 @@ public class StudentController {
         }
 
         @GetMapping("/get-by-id")
-    public ResponseEntity getById(@RequestParam int rollNo) {
+    public ResponseEntity getById(@RequestParam("rollNo") int rollNo) {
             Student student = studentService.getById(rollNo);
 
             if (student == null)

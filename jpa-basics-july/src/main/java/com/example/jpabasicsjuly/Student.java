@@ -13,7 +13,6 @@ import java.util.logging.Level;
 @Setter
 @Getter
 @Entity
-
 public class Student {
 
     @Id
